@@ -55,7 +55,11 @@ const resetGame = () => {
 
     <h3 class="text-xl mb-4">Player {{ player }}'s turn</h3>
     <div class="flex flex-col items-center mb-8">
-      <div v-for="(row, x) in board" :key="x" class="flex">
+      <div
+        v-for="(row, x) in board"
+        :key="x"
+        class="flex border border-gray-800"
+      >
         <div
           v-for="(cell, y) in row"
           :key="y"
